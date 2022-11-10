@@ -1,5 +1,5 @@
-# Curso-EcmaScript
-Practicando nuevas caracteristicas de JavaScript
+# Curso-ECMAScript
+Practicando nuevas características de JavaScript
 
 ## Para Comenzar.
 
