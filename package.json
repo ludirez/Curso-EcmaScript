@@ -12,11 +12,12 @@
   },
   "keywords": [
     "javascript",
-    "ecmaScript",
+    "ECMAScript",
     "practicas"
   ],
   "author": "ludirez <diazr.info@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/ludirez/Curso-EcmaScript/issues"
   },
