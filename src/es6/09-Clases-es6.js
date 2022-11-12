@@ -34,7 +34,8 @@ class User{
 
 const david = new User();
 
-//this . hace referencia al elemento padre que lo contiene
+//this . 
+//hace referencia al elemento padre que lo contiene
 class user {
     constructor(name){
         this.name = name;
@@ -51,3 +52,32 @@ class user {
 const ana = new user ('Ana');
 console.log(ana.greeting());
 
+//setters and getters
+
+class user{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    //método
+    speak(){
+        return 'Holis'
+    }
+    greeting(){
+        return `${this.speak()} ${this.name}`
+    }
+    //para leer el valor age
+    get uAge(){
+        return this.age;
+    }
+    //set para cambiar un valor
+    set uAge(n){
+        this.age = n;
+    }
+}
+
+const superUsuario = new user('Salma', 15)
+
+console.log(superUsuario.name)
+console.log(superUsuario.uAge)
+console.log(superUsuario.uAge = 120)
