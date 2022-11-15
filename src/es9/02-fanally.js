@@ -15,7 +15,7 @@ const anotherFunction = () =>{
 anotherFunction()
     .then (response => console.log(response)) //then traduce algo como entonces
     .catch (err => console.log(err))		//sino
-    .finally(()=>console.log('Finalizado'))
+    .finally(()=>console.log('Finalizado'));
     //mostrar algo cunado haya finalizado la promesas
 
 
@@ -44,14 +44,3 @@ async function forAwait() {
 //pero combinando sintaxis de promesas.
 
 
-    async function* anotherGenerator() {
-    yield await Promise.resolve(1)
-    yield await Promise.resolve(2)
-    yield await Promise.resolve(3)
-    }
-    
-    const generador = anotherGenerator()
-    generador.next().then(respuesta => console.log(respuesta.value))
-    generador.next().then(respuesta => console.log(respuesta.value))
-    generador.next().then(respuesta => console.log(respuesta.value))
-    console.log('hello')
